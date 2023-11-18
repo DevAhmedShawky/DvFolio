@@ -1,0 +1,112 @@
+@media (min-width: 992px) {
+  /* Start Navbar */
+  .navbar .nav-link.head-nav,
+  .navbar .nav-link.head-nav.active {
+    color: var(--white-color) !important;
+  }
+
+  .navbar .container .navbar-nav .nav-item .nav-link {
+    transition: var(--main-transition);
+    position: relative;
+  }
+
+  .navbar .container .navbar-nav .nav-item .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+  }
+
+  .navbar .container .navbar-nav .nav-item .nav-link:hover::before,
+  .navbar .container .navbar-nav .nav-item .nav-link.active::before {
+    width: 70%;
+  }
+  /* End Navbar */
+}
+
+@media (max-width: 991px) {
+  /* Start Navbar  */
+  button .icon-bar {
+    display: block;
+  }
+
+  .head-nav {
+    background-color: var(--white-color) !important;
+    padding: 0.625rem;
+  }
+
+  .head-nav .nav-link.active {
+    color: var(--main-color) !important;
+  }
+
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link:hover {
+    color: var(--main-color);
+  }
+  /* End Navbar  */
+}
+
+@media (max-width: 767px) {
+  /* Start Landing */
+  .landing .content h1 {
+    font-size: 3.375rem;
+  }
+  /* Start Landing */
+
+  /* Start About */
+  .about .row {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+  .about .container .about-head {
+    flex-direction: column;
+    align-items: initial !important;
+  }
+
+  .about .container .about-head img {
+    margin-bottom: 1.25rem;
+  }
+  /* End About */
+
+  /* Start Footer */
+  .footer .container .footers-group .footer-info h5 {
+    padding-top: 1.25rem !important;
+  }
+
+  .footer
+    .container
+    .footers-group
+    .footer-info
+    .footer-content
+    .footer-social
+    ul {
+    justify-content: center;
+  }
+  /* End Footer */
+}
+
+@media (max-width: 575px) {
+  /* Start About */
+  .about .container .group {
+    padding: 0 !important;
+  }
+  /* Start About */
+
+  /* Start Footer */
+  .footer .container .footers-group {
+    padding: 1.25rem !important;
+  }
+
+  .footer .container form {
+    margin-top: 1.875rem !important;
+  }
+  /* End Footer */
+}
